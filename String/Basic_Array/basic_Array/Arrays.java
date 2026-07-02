@@ -42,6 +42,38 @@ public class Arrays
 		}
 	}
 	
+	public static int[] SecLargestandSmallest(int[] arr)
+	{
+		int max = Integer.MIN_VALUE;
+		int min = Integer.MAX_VALUE;
+		
+		int secmax = Integer.MIN_VALUE;
+		int secmin = Integer.MAX_VALUE;
+		
+		for(int i =0; i<arr.length; i++)
+		{
+			if(arr[i] > max)
+			{
+				secmax = max;
+				max = arr[i];
+			}
+			else if(arr[i] > secmax && arr[i]!=max)
+			{
+				secmax = arr[i];
+			}
+			
+			if(arr[i] < min)
+			{
+				secmin = min;
+				min = arr[i];
+			}
+			else if(arr[i] < secmin && arr[i]!=min)
+			{
+				secmin = arr[i];
+			}
+		}	
+		return  new int[] {secmax , secmin};
+	}
 	
 	
 	public static void main(String[] args) 
@@ -97,10 +129,35 @@ public class Arrays
 //		Employee 3: 1500
 //		Employee 4: 2000
 		
+//			Scanner sc = new Scanner(System.in);
+//			int N = sc.nextInt();
+//			int B = sc.nextInt();
+//			q3(N,B);
+		
+		//q4
+//		Input: [1, 2, 4, 7, 7, 5]  
+//		Output:	  
+//			Second Smallest : 2  
+//			Second Largest : 5
+		
 		Scanner sc = new Scanner(System.in);
-		int N = sc.nextInt();
-		int B = sc.nextInt();
-		q3(N,B);
+		
+		System.out.println("Enter elements of an array: ");
+		String input = sc.nextLine();
+		
+		String[] temp = input.split(" ");
+		int[] arr = new int[temp.length];
+		for(int i=0; i<temp.length; i++)
+		{
+			arr[i] = Integer.parseInt(temp[i]);
+		}
+		 int[] ans = SecLargestandSmallest(arr);
+
+	        System.out.println("Second Largest: " + ans[0]);
+	        System.out.println("Second Smallest: " + ans[1]);
+
+	        sc.close();
+		
 	}
 
 }
