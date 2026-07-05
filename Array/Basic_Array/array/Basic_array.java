@@ -1,10 +1,9 @@
-package basic_Array;
-import java.util.Scanner;
+package array;
+import java.util.*;
 
-public class Arrays 
+public class Basic_array 
 {
 
-	
 	public static int smallestElement(int[] arr)
 	{
 		int smallest = Integer.MAX_VALUE;
@@ -289,22 +288,26 @@ public class Arrays
 //			}
 		
 		//q8-> anticlockwise
-		Scanner sc = new Scanner(System.in);
-		System.out.println("Enter the size of an array: ");
-		int N = sc.nextInt();
-		System.out.println("Rotated by: ");
-		int K = sc.nextInt();
-		System.out .println("Enter the elements of array");
-		int[] arr = new int[N];
-		for(int i=0; i<N; i++)
-		{
-			arr[i] = sc.nextInt();
-		}
-		q8(arr , K);
-		for(int i=0; i<N ; i++)
-		{
-			System.out.print(arr[i]+" ");
-		}
+//				Scanner sc = new Scanner(System.in);
+//				System.out.println("Enter the size of an array: ");
+//				int N = sc.nextInt();
+//				System.out.println("Rotated by: ");
+//				int K = sc.nextInt();
+//				System.out .println("Enter the elements of array");
+//				int[] arr = new int[N];
+//				for(int i=0; i<N; i++)
+//				{
+//					arr[i] = sc.nextInt();
+//				}
+//				q8(arr , K);
+//				for(int i=0; i<N ; i++)
+//				{
+//					System.out.print(arr[i]+" ");
+//				}
+		
+		
+		// \u000d System.out.println("Rotated by: ");
 	}
-
+	
+	
 }
