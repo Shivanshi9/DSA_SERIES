@@ -188,10 +188,10 @@ public class Basic_array
 //		Employee 3: 1500
 //		Employee 4: 2000
 		
-//			Scanner sc = new Scanner(System.in);
-//			int N = sc.nextInt();
-//			int B = sc.nextInt();
-//			q3(N,B);
+			Scanner sc = new Scanner(System.in);
+			int N = sc.nextInt();
+			int B = sc.nextInt();
+			q3(N,B);
 		
 		//q4
 //		Input: [1, 2, 4, 7, 7, 5]  
