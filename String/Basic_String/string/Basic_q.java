@@ -29,11 +29,10 @@ public class Basic_q
 		//m-1
 //		Scanner sc = new Scanner(System.in);
 //		String s = sc.nextLine();
-//		int n = s.length();
 //		char[] arr = s.toCharArray();
 //		for(int i=arr.length-1; i>=0; i--)
 //		{
-//			System.out.print(arr[i]);
+//			System.out.println(arr[i]);
 //		}
 //		
 //		//m-2
@@ -110,30 +109,86 @@ public class Basic_q
 //		flight
 //		Sample Output 1
 //		fl
+//		
+//		Scanner sc = new Scanner(System.in);
+//		int n = sc.nextInt();
+//		//sc.nextLine();
+//		String[] arr = new String[n];
+//		for(int i=0; i<n; i++)
+//		{
+//			arr[i] = sc.next();
+//		} 
+//		String prefix = arr[0];
+//		for( int i=1; i<arr.length; i++)
+//		{
+//			while(!arr[i].startsWith(prefix))
+//			{
+//				prefix = prefix.substring(0,prefix.length()-1);
+//				if(prefix.length()<1)
+//				{
+//					System.out.println("-1");
+//					break;
+//				}
+//			}
+//		}
+//		
+//		System.out.println(prefix);
+		
+//		q5-> First Non-Repeating Character
+//		Sample Input 2
+//		loveleetcode
+//		Sample Output 2
+//		v
+//		
+//		Scanner sc = new Scanner(System.in);
+//		String s = sc.next();
+//		HashMap<Character,Integer> map = new HashMap<>();
+//		for(int i=0; i<s.length();i++)
+//		{
+//			map.put(s.charAt(i), map.getOrDefault(s.charAt(i),0)+1);
+//		}
+//		
+//		for(int i=0; i<s.length(); i++)
+//		{
+//			if(map.get(s.charAt(i))==1)
+//			{
+//				System.out.println(s.charAt(i));
+//				return;
+//			}
+//		}
+//		
+//		System.out.println("-1");
+//		sc.close();
+		
+		
+		
+		
+//		q6-> Longest Substring Without Repeating Characters
+//		Sample Input 1
+//		abcabcbb
+//		Sample Output 1
+//		3
 		
 		Scanner sc = new Scanner(System.in);
-		int n = sc.nextInt();
-		//sc.nextLine();
-		String[] arr = new String[n];
-		for(int i=0; i<n; i++)
+		String s = sc.next();
+		
+		HashMap<Character,Integer> map = new HashMap<>();
+		int left =0;
+		int max = 0;
+		for(int r=0; r<s.length(); r++)
 		{
-			arr[i] = sc.next();
-		} 
-		String prefix = arr[0];
-		for( int i=1; i<arr.length; i++)
-		{
-			while(!arr[i].startsWith(prefix))
+			char ch = s.charAt(r);	
+			if(map.containsKey(ch))
 			{
-				prefix = prefix.substring(0,prefix.length()-1);
-				if(prefix.length()<1)
-				{
-					System.out.println("-1");
-					break;
-				}
-			}
+				left = Math.max(left, map.get(ch)+1);
+			}	
+			map.put(ch, r);
+			max = Math.max(max, r-left+1);	
 		}
 		
-		System.out.println(prefix);
+		System.out.println(max);
+		
+		
 		
 		
 		
