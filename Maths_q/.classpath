@@ -6,7 +6,6 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="src" path="src"/>
-	<classpathentry kind="src" path="merge_sort"/>
-	<classpathentry kind="src" path="quick_sort"/>
+	<classpathentry kind="src" path="Number_Theory"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

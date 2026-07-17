@@ -1,6 +1,8 @@
 package merge_sort;
 import java.util.*;
 
+
+//O(n)
 public class Implementation {
 
 	public static void mergesort(int[] arr, int s, int e)
@@ -21,7 +23,7 @@ public class Implementation {
 	{
 		//size of two arrays
 		int n1 = m-s+1; //0-based idx me +1 hota hi h
-		int n2 = e-m;  //e-(m+1)+1 = e-s
+		int n2 = e-m;  //e-(m+1)+1 = e-m
 		
 		//temprary arrays
 		int[] L = new int[n1];
@@ -71,11 +73,6 @@ public class Implementation {
 		
 	}
 	
-	
-	
-	
-	
-	
 	public static void main(String[] args)
 	{
 		Scanner sc = new Scanner(System.in);
@@ -88,12 +85,12 @@ public class Implementation {
 
 		mergesort(arr,0,n-1);
 		
-		   for(int x : arr)
-	        {
-	            System.out.print(x + " ");
-	        }
+	   for(int x : arr)
+        {
+            System.out.print(x + " ");
+        }
 
-	        sc.close();
+        sc.close();
 	}
 
 }

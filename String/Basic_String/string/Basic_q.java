@@ -169,24 +169,24 @@ public class Basic_q
 //		Sample Output 1
 //		3
 		
-		Scanner sc = new Scanner(System.in);
-		String s = sc.next();
-		
-		HashMap<Character,Integer> map = new HashMap<>();
-		int left =0;
-		int max = 0;
-		for(int r=0; r<s.length(); r++)
-		{
-			char ch = s.charAt(r);	
-			if(map.containsKey(ch))
-			{
-				left = Math.max(left, map.get(ch)+1);
-			}	
-			map.put(ch, r);
-			max = Math.max(max, r-left+1);	
-		}
-		
-		System.out.println(max);
+//		Scanner sc = new Scanner(System.in);
+//		String s = sc.next();
+//		
+//		HashMap<Character,Integer> map = new HashMap<>();
+//		int left =0;
+//		int max = 0;
+//		for(int r=0; r<s.length(); r++)
+//		{
+//			char ch = s.charAt(r);	
+//			if(map.containsKey(ch))
+//			{
+//				left = Math.max(left, map.get(ch)+1);
+//			}	
+//			map.put(ch, r);
+//			max = Math.max(max, r-left+1);	
+//		}
+//		
+//		System.out.println(max);
 		
 		
 		
