@@ -8,7 +8,7 @@ public class Hcf_Lcm {
 	{
 		while(b!=0)
 		{
-			int rem = a%b;
+			int rem = a % b; 
 			a = b;
 			b = rem;
 		}
@@ -49,3 +49,5 @@ public class Hcf_Lcm {
 	}
 
 }
+
+// leapyear , perfect square, factorial,count prime, majority element
