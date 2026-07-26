@@ -7,15 +7,15 @@ public class Implementation {
 
 	public static void mergesort(int[] arr, int s, int e)
 	{
-		if(s<e)
-		{
+		if(s>=e) return;
+		
 			int mid = s +(e-s)/2;
-			
+			 
 			mergesort(arr,s,mid);
 			mergesort(arr,mid+1,e);
 			
 			merge(arr,s,mid,e);
-		}	
+			
 	}
 	
 	

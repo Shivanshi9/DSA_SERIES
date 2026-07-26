@@ -4,7 +4,7 @@ import java.util.*;
 public class Implementation 
 {
 	
-	
+//	
 	public static void quicksort(int[] arr, int s, int e)
 	{
 		if(s>=e) return;
@@ -24,7 +24,7 @@ public class Implementation
 		for(int i=s; i<e ;i++)
 		{
 			if(arr[i]<pivot)
-			{
+			{ 
 				idx++; //-1 to 0
 				
 				//swap elements which are lesser the pivot to left side and greater element to right side
@@ -61,5 +61,36 @@ public class Implementation
 
 	        sc.close();
 	}
+	
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 
 }
