@@ -10,7 +10,8 @@ public class Basic_q
 //		Scanner sc = new Scanner(System.in);
 //		String sen = sc.nextLine();
 //		sen = sen.trim();
-//		if (sen.isEmpty()) {
+//		if (sen.isEmpty())
+		{
 //		    return;
 //		}
 //		String[] arr = sen.split("\\s+");
@@ -189,10 +190,24 @@ public class Basic_q
 //		System.out.println(max);
 		
 		
+		//Store frequency
+		Scanner sc = new Scanner(System.in);
+		String str = sc.next();
 		
+		LinkedHashMap<Character,Integer> map = new LinkedHashMap<>();
+		for(int i=0; i<str.length(); i++)
+		{
+			char ch = str.charAt(i);
+			map.put(ch, map.getOrDefault(ch, 0)+1);
+		}
 		
+		for(Map.Entry<Character,Integer> entry: map.entrySet())
+		{
+			System.out.println(entry.getKey()+ "->"+ entry.getValue());
+		}
 		
-		
+		//will work but sequence change 
+		// System.out.println(map);
 		
 		
 	}

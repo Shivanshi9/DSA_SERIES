@@ -135,6 +135,33 @@ public class Basic_array
 		reverse(arr,0,n-1);
 	}
 	
+	
+	public static void removerduplivates(int[] arr)
+	{
+		 LinkedHashSet<Integer> set = new LinkedHashSet<>();
+
+	        for (int num : arr) {
+	            set.add(num);
+	        }
+
+	        for (int num : set) {
+	            System.out.print(num + " ");
+	        }
+	}
+	
+	public static void removerduplivatesfromstring(String arr)
+	{
+		 LinkedHashSet<Character> set = new LinkedHashSet<>();
+
+		 for(char ch : arr.toCharArray()){
+	            set.add(ch);
+	        }
+
+	        for(char ch : set){
+	            System.out.print(ch);
+	        }
+	}
+	
 	public static void main(String[] args) 
 	{
 		//Smallest Element
