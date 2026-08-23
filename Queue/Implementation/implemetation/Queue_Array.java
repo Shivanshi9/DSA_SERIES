@@ -55,7 +55,7 @@ class QueueArray
 	}
 	
 	//peek
-	int peek()
+	int peek() 
 	{
 		if (isEmpty()) {
             System.out.println("Queue Empty");

@@ -87,6 +87,7 @@ public class Stack_Array
 		s.display();
 		System.out.print(s.pop());
 		
+		
 	}
 
 }
