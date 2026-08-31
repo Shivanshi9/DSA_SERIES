@@ -122,6 +122,7 @@ public class Queue_usingStack
 
 		qs.dequeue();
 		qs.display();
-	}
+		System.out.println();
+		}
 
 }
